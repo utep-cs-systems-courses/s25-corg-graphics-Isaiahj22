@@ -66,7 +66,7 @@ screen_update_ball()
     if (drawPos[axis] != controlPos[axis]) /* position changed? */
       goto redraw;
   return;			/* nothing to do */
- redraw:
+   redraw:
   draw_ball(drawPos[0], drawPos[1], COLOR_BLUE); /* erase */
   for (char axis = 0; axis < 2; axis ++) 
     drawPos[axis] = controlPos[axis];
